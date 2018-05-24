@@ -68,7 +68,8 @@ import "@/assets/pulice/css/normalize.css";
 import "@/assets/css/animate.css";
 import "@/assets/pulice/css/pulice.css";
 import "@/assets/css/benefit.css";
-
+import "@/assets/js/jquery-2.1.1.min.js";
+import "@/assets/js/benefit.js"
 export default {
     data() {
         return {
