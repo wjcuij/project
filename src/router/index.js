@@ -5,6 +5,7 @@ import pertner from '@/components/partner'
 import recruit from '@/components/recruit'
 import introduce from '@/components/introduce'
 import benefit from '@/components/benefit'
+import lease from '@/components/lease'
 
 Vue.use(Router)
 
@@ -33,6 +34,18 @@ export default new Router({
           component: header
         }
       ]
+    },
+    {
+      path: '/lease',
+      name: '',
+      component: lease,
+      // children:[
+      //   {
+      //     path: '/lease',
+      //     name: 'header',
+      //     component: header
+      //   }
+      // ]
     },
     {
       path: '/recruit',

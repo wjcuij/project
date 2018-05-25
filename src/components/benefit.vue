@@ -3,12 +3,13 @@
     <div>
         <router-view></router-view>
         <main>
+            <img src="@/assets/img/niao.png" alt="" class="niao" />
             <div class="content">
                 <div class="xulie">
                     <img src="@/assets/img/fangzi.png" alt="">
-                    <span class="jiantou">主页</span>
-                    <span class="jiantou">社区</span>
-                    <span>公益事业</span>
+                    <a href="/" class="jiantou">主页</a>
+                    <a href="/" class="jiantou">社区</a>
+                    <a href="/">公益事业</a>
                 </div>
             
             <img src="@/assets/img/titimg.png" alt="" style="margin:0 auto;display:block;">
@@ -27,47 +28,22 @@
                                 <p> {{ item.name }}</p>
                                 <p> {{ item.content }}</p>
                             </div>
-                        </li>
-                        <!-- <li>
-                            <img src="@/assets/img/wangluo.png" alt="">
-                            <div class="compnayname">
-                                <p>NETWIRK SERVICE</p>
-                                <p>盈泰永富网络服务</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="@/assets/img/haojing.png" alt="">
-                            <div class="compnayname">
-                                <p>PROPERTY</p>
-                                <p>灏璟物业</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="@/assets/img/shangwu.png" alt="">
-                            <div class="compnayname">
-                                <p>PROPERTY</p>
-                                <p>盈泰永富商务服务中心</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="@/assets/img/fangdichan.png" alt="">
-                            <div class="compnayname">
-                                <p>PROPERTY</p>
-                                <p>灏璟物业</p>
-                            </div>
-                        </li> -->
-                       
+                        </li>   
                     </ul>
-
+                <img src="@/assets/img/join.png" alt="" style="width:100%;" />
                 </div>
+                <img src="@/assets/img/banqiu.png" class="banqiu" alt="">
         </main>
     </div>
 </template>
+<style scoped src="@/assets/pulice/css/normalize.css"></style>
+<style scoped src="@/assets/css/animate.css"></style>
+<style scoped src="@/assets/pulice/css/pulice.css"></style>
 <script>
-import "@/assets/pulice/css/normalize.css";
-import "@/assets/css/animate.css";
-import "@/assets/pulice/css/pulice.css";
-import "@/assets/css/benefit.css";
+// import "@/assets/pulice/css/normalize.css";
+// import "@/assets/css/animate.css";
+// import "@/assets/pulice/css/pulice.css";
+// import "@/assets/css/benefit.css";
 import "@/assets/js/jquery-2.1.1.min.js";
 import "@/assets/js/benefit.js"
 export default {
@@ -91,10 +67,12 @@ export default {
     },
     methods:{
         
-    }    
+    },
+    created(){console.log(this.$route.path)}
 }
 </script>
 <style lang="scss" scoped>
+main{background:#f8f5f6;width:100%;position:relative;padding-bottom:60px;}
 header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
 .content{width: 1400px;margin:0 auto;padding-top:20px;position: relative;z-index: 2;
     .character{
@@ -117,6 +95,8 @@ header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
         }
     }
 }
+.niao{position: absolute;left:0;top:300px;}
+.banqiu{position:absolute;right:0;bottom:0;}
 .lines{
         position: absolute;
     width: 90%;
@@ -151,7 +131,7 @@ header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
         bottom: 0;
         background: rgba(0,0,0,.5);
         text-align: left;
-        padding-top: 40px;
+        padding-top:28px;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         >p{
@@ -164,9 +144,9 @@ header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
             font-weight: 100;
         }
     }
-    .compnayname:nth-last-child(1),.compnayname:nth-last-child(2){
-        padding-top: 30px;
-    }
+    // .compnayname:nth-last-child(1),.compnayname:nth-last-child(2){
+    //     padding-top: 30px;
+    // }
     ul{
         display:flex;
         flex-direction: row;
@@ -174,11 +154,11 @@ header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
         -webkit-box-direction: normal;
         flex-wrap: wrap;
         padding:0;
+        margin:0;
         li{
             position:relative;
             flex-grow:1;
-            // width: 25%;
-            // min-width: 19%;
+margin-bottom:10px;
             img{
                 width: 100%;   
                 height:100%;
@@ -189,6 +169,9 @@ header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
         }
         li:last-child{
             background:#ffc704;
+            div{    
+                display:none;
+            }
         }
         li:nth-of-type(3){
             // flex-grow:3;
@@ -198,11 +181,12 @@ header{background:url('/static/img/gongyi_01.jpg')center no-repeat;}
             // }
         }
         li:nth-of-type(2),li:nth-of-type(5){
-            margin: 0 12px;
+            margin-left:12px;
+            margin-right:12px;
         }
-        li:nth-of-type(1),li:nth-of-type(2),li:nth-of-type(3){
-            margin-bottom:10px;
-        }
+       li:nth-last-child(3) .compnayname,li:nth-last-child(2) .compnayname{
+padding-top:18px;
+       }
     }
     .compnayname{
         position:absolute;

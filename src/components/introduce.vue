@@ -81,10 +81,14 @@
         </main>
     </div>
 </template>
+<style scoped src="@/assets/pulice/css/normalize.css"></style>
+<style scoped src="@/assets/css/animate.css"></style>
+<style scoped src="@/assets/pulice/css/pulice.css"></style>
+<style scoped src="@/assets/css/introduce.css"></style>
 <script>
-import "@/assets/pulice/css/normalize.css";
-import "@/assets/css/animate.css";
-import "@/assets/pulice/css/pulice.css";
+// import "@/assets/pulice/css/normalize.css";
+// import "@/assets/css/animate.css";
+// import "@/assets/pulice/css/pulice.css";
 // import "@/assets/css/introduce.css";
 import "@/assets/js/jquery-2.1.1.min.js";
 import "@/assets/js/index.js";
@@ -103,5 +107,5 @@ export default {
   }
 };
 </script>
-<style scoped src="@/assets/css/introduce.css"></style>
+
 

@@ -108,17 +108,18 @@
     </main>
   </div>
 </template>
-<!--<style scoped src="@/assets/pulice/css/normalize.css"></style>
+<style scoped src="@/assets/pulice/css/normalize.css"></style>
 <style scoped src="@/assets/css/animate.css"></style>
+<!--<style scoped src="@/assets/pulice/css/pulice.css"></style>-->
 <style scoped src="swiper/dist/css/swiper.css"></style>
-<style scoped src="@/assets/pulice/css/pulice.css"></style>
-<style scoped src="@/assets/css/recruit.css"></style>-->
+
+<style scoped src="@/assets/css/recruit.css"></style>
 <script>
 // import "@/assets/pulice/css/normalize.css";
 // import "@/assets/css/animate.css";
-import "swiper/dist/css/swiper.css"
-// import "@/assets/pulice/css/pulice.css";
-import "@/assets/css/recruit.css";
+import "swiper/dist/css/swiper.css";
+import "@/assets/pulice/css/pulice.css";
+// import "@/assets/css/recruit.css";
 import "@/assets/js/jquery-2.1.1.min.js";
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
 import "@/assets/js/index.js";

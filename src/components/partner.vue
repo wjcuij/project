@@ -40,12 +40,15 @@
     </div>
    
 </template>
-
+<style scoped src="@/assets/pulice/css/normalize.css"></style>
+<style scoped src="@/assets/css/animate.css"></style>
+<style scoped src="@/assets/pulice/css/pulice.css"></style>
+<style scoped src="@/assets/css/index.css"></style>
 <script>
-import "@/assets/pulice/css/normalize.css";
-import "@/assets/css/animate.css";
-import "@/assets/pulice/css/pulice.css";
-import "@/assets/css/index.css";
+// import "@/assets/pulice/css/normalize.css";
+// import "@/assets/css/animate.css";
+// import "@/assets/pulice/css/pulice.css";
+// import "@/assets/css/index.css";
 import "@/assets/js/index.js";
 export default {
   name: "partner",

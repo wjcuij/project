@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <header>
+    <div id="headerModule">
+        <header :style="{background:'url('+headerbj+')'}">
             <div>
                 <div class="nav_left">
                     <img src="@/assets/img/jticon.png" alt="">
@@ -39,3 +39,40 @@
         </header>
     </div>
 </template>
+
+<script>
+export default {
+    name:"headerModule",
+    props:{
+        headerbj:{
+            type:String,
+            default:() => {
+                // return require('@/assets/img/nav_01.jpg')
+                return headerba
+            }
+        }
+    },
+    created(){
+        let vm = this
+        let pageName = this.$route.path;
+        // this.pageName = "一站式商务企业服务"
+        pageName = pageName.replace(/[\/]/g,'');
+        // this.list.map((e,i)=>{
+        //     console.log(e);
+            
+        //     vm.headerImg = (e.title == vm.pageName) ? e.url : vm.list[0].url;
+        // })
+        // console.log(pageName);
+        // pageName == 'lease' ? headerbj = require('@/assets/img/hqdh.png') : headerbj = require('@/assets/img/nav_01.jpg');
+    }
+    // data(){
+    //     return{
+    //          headerImgStyle:{
+    //             '环球':{
+    //                 background:
+    //             }
+    //         }
+    //     }
+    // }
+}
+</script>
