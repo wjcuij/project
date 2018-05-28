@@ -36,9 +36,7 @@
         </main>
     </div>
 </template>
-<style scoped src="@/assets/pulice/css/normalize.css"></style>
-<style scoped src="@/assets/css/animate.css"></style>
-<style scoped src="@/assets/pulice/css/pulice.css"></style>
+
 <script>
 // import "@/assets/pulice/css/normalize.css";
 // import "@/assets/css/animate.css";

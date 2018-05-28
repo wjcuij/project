@@ -19,10 +19,11 @@ body{
 header{
 	width: 100%;
 	height:357px;
-	
 	padding:34px 0 0 41px;
 	box-sizing:border-box;
 }
+
+
 .daojishi{	font-weight: 800;margin-top: 16px;font-size: 32px;}
 .nav_left{
 	float:left;

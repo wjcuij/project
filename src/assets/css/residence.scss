@@ -1,0 +1,115 @@
+#headerModule /deep/ header{
+    height:766px;
+}
+.header_text{
+	margin: auto;
+    position: absolute;
+    // top: 0;
+    left: 0;
+    bottom: 0;
+    width:863px;
+    right: 0;
+    height: 145px;
+}
+.header_text img{
+    display:block;
+    margin:30px auto 0;
+
+}
+.header_text img:nth-of-type(2){
+	-webkit-animation-delay:1s;
+}
+.header_footer{
+	width: 1400px;
+	margin:0 auto; 
+}
+.header_footer ul li img{
+	vertical-align: middle;
+}
+.header_footer ul{
+	display: flex;
+	-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.header_footer ul li{
+	flex:1;
+	text-align:center;
+}
+input{border:none;outline: none;}
+.header_text ul{
+    font-size:16px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 350px;
+    color:#fff;
+    position:relative;
+    
+    li{
+        flex:1;
+        cursor: pointer;
+        margin-right: 39px;
+
+    }
+   
+    
+}
+.triangle{
+    width: 0;
+	height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    left: 55px;
+    bottom: -16px;
+    -webkit-transition:all .5s;
+}
+// .triangle::before{
+//     display:block;
+// content:close-quote;
+// border-width:8px 8px 8px 8px;
+// border-style:solid;
+// border-color:transparent transparent #fff transparent;
+// position:absolute;
+// // left: 55px;/*143 230 317*/
+// top: 18px;
+// // -webkit-transition:all 1s;
+// }
+.header_text{
+    font-size:0;
+    input[type="text"]{
+        width: 702px;
+        height:66px;
+        font-size:16px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    button{
+        width: 160px;
+        display: inline-block;
+        font-size:20px;
+        letter-spacing: 2px;   
+        cursor:pointer; 
+        color:#fff;
+        height:66px;
+        border:none;
+        outline: none;
+        background:-webkit-linear-gradient(left,#388cd8,#5c41a0)
+    }
+}
+main{
+    width: 100%;
+    >img{
+        width: 100%;
+        display: block;
+    }
+    .content{
+        width:1316px;
+        margin:0 auto;
+    }
+}

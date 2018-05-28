@@ -1,6 +1,8 @@
 <template>
     <div id="headerModule">
         <header :style="{background:'url('+headerbj+')'}">
+            
+            <slot name="slot1"></slot>
             <div>
                 <div class="nav_left">
                     <img src="@/assets/img/jticon.png" alt="">
@@ -37,9 +39,14 @@
                 </div>
             </div>
         </header>
+        <slot name="slot2">
+        </slot>
     </div>
 </template>
-
+<style src="@/assets/pulice/css/normalize.css"></style>
+<style src="@/assets/css/animate.css"></style>
+<style src="@/assets/pulice/css/pulice.css"></style>
+<style scoped src="@/assets/pulice/css/pulice.css"></style>
 <script>
 export default {
     name:"headerModule",
@@ -47,10 +54,18 @@ export default {
         headerbj:{
             type:String,
             default:() => {
-                // return require('@/assets/img/nav_01.jpg')
-                return headerba
+                return require('@/assets/img/nav_01.jpg')
+                // return headerba
             }
         }
+    },
+    components:{
+    //     slot1: {
+    //     template: '<button>'+
+    //                     '<slot name="name1"></slot>'+
+    //                     'button标签'+
+    //                 '</button>'
+    // }
     },
     created(){
         let vm = this

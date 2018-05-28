@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import header from '@/components/pulice/header'
-import pertner from '@/components/partner'
+import partner from '@/components/partner'
 import recruit from '@/components/recruit'
 import introduce from '@/components/introduce'
 import benefit from '@/components/benefit'
 import lease from '@/components/lease'
-
+import residence from '@/components/residence'
+/**index.js */
 Vue.use(Router)
 
 export default new Router({
@@ -14,7 +15,7 @@ export default new Router({
     {
       path: '/',
       name: 'partner',
-      component: pertner, 
+      component: partner, 
       children:[
         {
           path: '/',
@@ -72,6 +73,11 @@ export default new Router({
           }
         }
       ]
+    },
+    {
+      path:'/residence',
+      name:'',
+      component:residence
     }
   ]
 })
