@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import header from '@/components/pulice/header'
+// import header from '@/components/pulice/header'
+const header = () =>
+  import ('@/components/pulice/header')
 import partner from '@/components/partner'
 import recruit from '@/components/recruit'
 import introduce from '@/components/introduce'
@@ -16,13 +18,17 @@ export default new Router({
       path: '/',
       name: 'partner',
       component: partner, 
+      meta:{
+        title:'客户合作伙伴展示'
+      },
       children:[
         {
           path: '/',
           name: 'header',
           component: header
         }
-      ]     
+      ]
+
     },
     {
       path: '/introduce',
@@ -40,6 +46,9 @@ export default new Router({
       path: '/lease',
       name: '',
       component: lease,
+      meta:{
+        title:'客户合作伙伴展示'
+      }
       // children:[
       //   {
       //     path: '/lease',

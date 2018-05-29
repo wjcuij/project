@@ -41,7 +41,7 @@
    
 </template>
 
-<style scoped src="@/assets/css/index.css"></style>
+<style scoped src="@/assets/css/partner.css"></style>
 <script>
 // import "@/assets/pulice/css/normalize.css";
 // import "@/assets/css/animate.css";

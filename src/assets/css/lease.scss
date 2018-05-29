@@ -4,6 +4,7 @@ main{
     .tit{
         font-size:30px;
         font-weight:800;
+        margin-bottom: 70px;
     }
     .content{
         width: 1400px;margin:0 auto;padding-top:20px;position: relative;z-index: 2;
@@ -31,7 +32,7 @@ main{
                 -ms-flex-positive: 1;
                 flex-grow: 1;
                 background-size:cover;
-                height:298px;
+                // height:298px;
                 color:#fff;
                 font-size:28px;
                 text-align:center;
@@ -42,6 +43,7 @@ main{
                     width: 100%;
                     transition:all 1s;
                 -webkit-transition:all 1s;
+                display: block;
                 }
                 p{
                     font-weight:200;
@@ -224,6 +226,7 @@ ul{margin-left:0;padding:0;}
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    padding: 15px 0;
 }
 .header_footer ul li{
 	flex:1;

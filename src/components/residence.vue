@@ -30,7 +30,52 @@
         <main>
             <img src="@/assets/img/sjzhuzhai_02.jpg" alt="">
             <div class="content">
-                <img src="@/assets/img/wnex.png" alt="">
+                <div class="content_img clearfloat">
+                    <img src="@/assets/img/wnex.png" alt=""><br>
+                    <br>
+                    <img src="@/assets/img/wnjx.png" alt="">
+                    <a href="javascript:;"><img src="@/assets/img/gdfy.png" alt=""></a>
+                </div>
+                <ul class="content_list">
+                    <li>
+                        <img src="@/assets/img/gongyu1.png" alt="">
+                        <div>
+                            <p>珠光新城御景 中层三房</p>
+                        <span>3室1厅  91.06方</span>    
+                        </div>
+                    </li>
+                    <li>
+                        <img src="@/assets/img/gongyu1.png" alt="">
+                        <div>
+                            <p>珠光新城御景 中层三房</p>
+                        <span>3室1厅  91.06方</span>    
+                        </div>
+                    </li>
+                    <li>
+                        <img src="@/assets/img/gongyu1.png" alt="">
+                        <div>
+                            <p>珠光新城御景 中层三房</p>
+                        <span>3室1厅  91.06方</span>    
+                        </div>
+                    </li>
+                    <li>
+                        <img src="@/assets/img/gongyu1.png" alt="">
+                        <div>
+                            <p>珠光新城御景 中层三房</p>
+                        <span>3室1厅  91.06方</span>    
+                        </div>
+                    </li>
+                </ul>
+                <div class="content_img2">
+                    <img src="@/assets/img/xpqh.png" alt=""><br><br>
+                    <img src="@/assets/img/zqtb.png" alt="">
+                </div>
+                <ul class="content_ul">
+                    <li v-for="(item,index) in list" :key="index">
+                        <img :src="item.url" alt="">
+                        <p>{{ item.title }}</p>
+                    </li>
+                </ul>
             </div>
         </main>
     </div>
@@ -47,6 +92,20 @@ export default {
         return {
             headerList:[
                 '找合租','找整租','找小区','找商圈'
+            ],
+            list: [
+                {
+                url: require("@/assets/img/xzl.png"),
+                title: "南沙亚湾港项目"
+                },
+                {
+                url: require("@/assets/img/hqdh.png"),
+                title: "番禺智慧城项目"
+                },
+                {
+                url: require("@/assets/img/yzs.png"),
+                title: "天河财富城项目"
+                }
             ]
         }
     },
